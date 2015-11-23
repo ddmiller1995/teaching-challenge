@@ -1,0 +1,42 @@
+.button, .jumbo-button, .light-button {
+  background: green;
+  border-radius: 8px;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none; }
+
+.jumbo-button {
+  padding: 35px; }
+
+.light-button {
+  background: #00c000; }
+
+h1 {
+  color: blue; }
+
+nav {
+  color: blueviolet;
+  font: "Helvetica", sans-serif; }
+  nav ul {
+    color: firebrick;
+    font-size: 24px; }
+
+.panel, .hello_img, .earth_img {
+  border: 3px solid dodgerblue;
+  background: lightblue;
+  margin: 10px; }
+
+.hello_img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.earth_img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+/*# sourceMappingURL=main.css.map */

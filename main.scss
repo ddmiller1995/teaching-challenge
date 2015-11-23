@@ -1,0 +1,61 @@
+$buttonBackground: green;
+$buttonColor: #FFFFFF;
+$buttonPadding: 5px;
+
+.button{
+  background: $buttonBackground;
+  border-radius: 8px;
+  color: $buttonColor;
+  display: inline-block;
+  padding: $buttonPadding;
+  text-decoration: none;
+}
+
+.jumbo-button{
+  @extend .button;
+  padding: $buttonPadding + 30;
+}
+
+.light-button{
+  @extend .button;
+  background: $buttonBackground * 1.5;
+}
+
+$font-stack: 'Helvetica', sans-serif;
+$primary-color: blue;
+$text-size: 24px;
+
+h1 {
+  color: $primary-color;
+}
+
+nav {
+  color: blueviolet;
+  font: $font-stack;
+  ul {
+    color: firebrick;
+    font-size: $text-size;
+  }
+}
+.panel{
+  border: 3px solid dodgerblue;
+  background: lightblue;
+  margin: 10px;
+
+}
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+.hello_img{
+  @extend .panel;
+  @include border-radius(5px);
+}
+.earth_img{
+  @extend .panel;
+  @include border-radius(20px);
+}
+

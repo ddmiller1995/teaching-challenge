@@ -1,3 +1,7 @@
+.profile_img {
+  border-radius: 999px;
+  border: 5px solid #2d76b2; }
+
 .button, .jumbo-button, .light-button {
   background: green;
   border-radius: 8px;
@@ -17,7 +21,8 @@ h1 {
 
 nav {
   color: blueviolet;
-  font: "Helvetica", sans-serif; }
+  font: "Helvetica", sans-serif;
+  font-size: 32px; }
   nav ul {
     color: firebrick;
     font-size: 24px; }

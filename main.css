@@ -1,3 +1,7 @@
+.llama_img {
+  max-height: 200px;
+  float: right; }
+
 h1 {
   color: #9c40cc;
   font-family: "Helvetica", sans-serif;

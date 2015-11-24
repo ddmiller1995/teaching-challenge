@@ -1,18 +1,29 @@
+/*-----Completed in tutorial------*/
+
+@import "partial";
+
+$primary-color: #9c40cc;
+$primary-font: 'Helvetica', sans-serif;
 
 h1 {
-  color: #9c40cc;
-  font-family: 'Helvetica', sans-serif;
+  color: $primary-color;
+  font-family: $primary-font;
   font-size: 45px;
 }
 
 nav {
-  color: #9c40cc;
+  color: $primary-color;
   font-size: 32px;
-  font-family: 'Helvetica', sans-serif;
+  font-family: $primary-font;
   ul{
     color: darkblue;
     font-size: 24px;
   }
+}
+
+.panel {
+  background: #82dd61;
+  padding: 30px;
 }
 
 
@@ -22,13 +33,13 @@ nav {
 }
 
 .button {
-  background: #82dd61;
-  padding: 30px;
+  @include border-radius(10px);
+  @extend .panel;
 }
 
 .light-button{
-  background: #82dd61;
-  padding: 30px;
+  @include border-radius(25px);
+  @extend .panel;
 }
 
 button {

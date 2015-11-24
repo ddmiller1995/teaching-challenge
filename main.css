@@ -15,13 +15,17 @@ nav {
     color: darkblue;
     font-size: 24px; }
 
-.button {
+.panel, .button, .light-button {
   background: #82dd61;
   padding: 30px; }
 
+.button {
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
 .light-button {
-  background: #82dd61;
-  padding: 30px; }
+  -webkit-border-radius: 20px;
+  border-radius: 20px; }
 
 button {
   width: 100px;

@@ -19,6 +19,10 @@ nav {
   }
 }
 
+.panel {
+  background: #82dd61;
+  padding: 30px;
+}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -26,13 +30,13 @@ nav {
 }
 
 .button {
-  background: #82dd61;
-  padding: 30px;
+  @include border-radius(10px);
+  @extend .panel;
 }
 
 .light-button{
-  background: #82dd61;
-  padding: 30px;
+  @include border-radius(20px);
+  @extend .panel;
 }
 
 button {

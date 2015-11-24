@@ -1,0 +1,26 @@
+h1 {
+  color: #9c40cc;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 45px; }
+
+nav {
+  color: #9c40cc;
+  font-size: 32px;
+  font-family: 'Helvetica', sans-serif; }
+  nav ul {
+    color: darkblue;
+    font-size: 24px; }
+
+.button {
+  background: #82dd61;
+  padding: 30px; }
+
+.light-button {
+  background: #82dd61;
+  padding: 30px; }
+
+button {
+  width: 100px;
+  height: 50px; }
+
+/*# sourceMappingURL=main.css.map */

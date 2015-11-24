@@ -1,51 +1,28 @@
-@import "profile";
+@import "partial";
 
-
-$buttonBackground: green;
-$buttonColor: #FFFFFF;
-$buttonPadding: 5px;
-
-.button{
-  background: $buttonBackground;
-  border-radius: 8px;
-  color: $buttonColor;
-  display: inline-block;
-  padding: $buttonPadding;
-  text-decoration: none;
-}
-
-.jumbo-button{
-  @extend .button;
-  padding: $buttonPadding + 30;
-}
-
-.light-button{
-  @extend .button;
-  background: $buttonBackground * 1.5;
-}
-
-$font-stack: 'Helvetica', sans-serif;
-$primary-color: blue;
+$primary-font: 'Helvetica', sans-serif;
+$primary-color: #9c40cc;
 $text-size: 24px;
 
 h1 {
   color: $primary-color;
+  font-family: $primary-font;
+  font-size: 45px;
 }
 
 nav {
-  color: blueviolet;
-  font: $font-stack;
+  color: $primary-color;
   font-size: 32px;
+  font-family: $primary-font;
   ul {
-    color: firebrick;
+    color: darkblue;
     font-size: $text-size;
   }
 }
-.panel{
-  border: 3px solid dodgerblue;
-  background: lightblue;
-  margin: 10px;
 
+.panel {
+  border: 3px solid deeppink;
+  margin:10px;
 }
 
 @mixin border-radius($radius){
@@ -54,12 +31,31 @@ nav {
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
-.hello_img{
+
+.compare_img{
+  @include border-radius(10px);
   @extend .panel;
-  @include border-radius(5px);
-}
-.earth_img{
-  @extend .panel;
-  @include border-radius(20px);
 }
 
+.fearnot_img{
+  @include border-radius(25px);
+  @extend .panel;
+}
+
+$buttonBackground: #82dd61;
+$button-padding: 30px;
+
+.button {
+  background: $buttonBackground;
+  margin-left: $button-padding;
+}
+
+.light-button {
+  background: $buttonBackground *1.5;
+  margin-left: $button-padding;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+}

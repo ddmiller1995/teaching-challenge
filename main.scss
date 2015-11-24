@@ -1,8 +1,5 @@
-@import "partial";
-
-$primary-font: 'Helvetica', sans-serif;
 $primary-color: #9c40cc;
-$text-size: 24px;
+$primary-font: 'Helvetica', sans-serif;
 
 h1 {
   color: $primary-color;
@@ -14,45 +11,26 @@ nav {
   color: $primary-color;
   font-size: 32px;
   font-family: $primary-font;
-  ul {
+  ul{
     color: darkblue;
-    font-size: $text-size;
+    font-size: 24px;
   }
 }
 
-.panel {
-  border: 3px solid deeppink;
-  margin:10px;
-}
 
-@mixin border-radius($radius){
+@mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
   border-radius: $radius;
 }
 
-.compare_img{
-  @include border-radius(10px);
-  @extend .panel;
-}
-
-.fearnot_img{
-  @include border-radius(25px);
-  @extend .panel;
-}
-
-$buttonBackground: #82dd61;
-$button-padding: 30px;
-
 .button {
-  background: $buttonBackground;
-  margin-left: $button-padding;
+  background: #82dd61;
+  padding: 30px;
 }
 
-.light-button {
-  background: $buttonBackground *1.5;
-  margin-left: $button-padding;
+.light-button{
+  background: #82dd61;
+  padding: 30px;
 }
 
 button {
